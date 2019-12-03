@@ -1,0 +1,38 @@
+baseURL = "http://rrcgat.github.io/"
+title = "Rrcgat's blog"
+theme = "zzo"
+
+defaultContentLanguage = "zh" # Default language to use (if you setup multilingual support)
+defaultContentLanguageInSubdir = true # baseURL/en/, baseURL/kr/ ...
+hasCJKLanguage = true # Set `true` for Chinese/Japanese/Korean languages.
+
+summaryLength = 70
+
+copyright = "&copy;{year}, All Rights Reserved"
+timeout = 10000
+enableEmoji = true
+paginate = 13
+rssLimit = 100
+
+pygmentsOptions = "linenos=table"
+pygmentsUseClasses = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON", "WebAppManifest"]
+
+[mediaTypes."application/manifest+json"]
+  suffixes = ["webmanifest"]
+
+[outputFormats.WebAppManifest]
+  mediaType = "application/manifest+json"
+  rel = "manifest"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
