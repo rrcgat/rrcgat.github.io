@@ -14,21 +14,29 @@ enableEmoji = true
 paginate = 13
 rssLimit = 100
 
-pygmentsOptions = "linenos=table"
-pygmentsUseClasses = true
+googleAnalytics = ""
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
+      hardWraps = true
       unsafe = true
+      xHTML = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
 
 [outputs]
-  home = [ "HTML", "RSS", "JSON", "WebAppManifest"]
+  home = ["HTML", "RSS", "JSON", "WEBMANIFEST"]
 
 [mediaTypes."application/manifest+json"]
   suffixes = ["webmanifest"]
 
-[outputFormats.WebAppManifest]
+[outputFormats.webmanifest]
+  name = "webmanifest"
+  baseName = "webmanifest"
   mediaType = "application/manifest+json"
   rel = "manifest"
 
