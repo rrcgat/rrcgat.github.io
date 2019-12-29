@@ -6,7 +6,7 @@
 	"categories": [],
 	"series": [],
 	"description": "",
-	"content": "问题并不复杂，要求对指定信息按指定方式解码。\n假设输入是 s，求解函数是 foo， 则 foo(s) = foo(s[0]) * foo(char[1:]) + foo(s[:2]) * foo(s[2:])。\n递归加动态规划，很容易就写出有 Bug 的代码来。 一些特殊情况需要考虑完全， 不然就增加了很多试错的时间。\n一开始写了个递归的版本，修修改改，最后通过了。 但看了 StefanPochmann 的版本， 发现并不需要这么麻烦。\n研究了一下他的思路，自己用 Common Lisp 实现了一下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  (defun num-decodings (s) (let ((prev \u0026#34;\u0026#34;) (pw 0) (cw (if (string\u0026gt; s \u0026#34;0\u0026#34;) 1 0))) (loop for curr across s do (psetf pw cw prev curr cw (+ (if (char\u0026gt; curr #\\0) cw 0) (if (\u0026lt; 9 (parse-integer (format nil \u0026#34;~a~a\u0026#34; prev curr)) 27) pw 0))) finally (return cw))))   即便使用 psetf 平行赋值，代码行数也比 Python 的实现要多。 当然，这也跟我对 Common Lisp 并不熟悉有关， 以后再看看。\n"
+	"content": "问题并不复杂，要求对指定信息按指定方式解码。\n假设输入是 s，求解函数是 foo，\n则 foo(s) = foo(s[0]) * foo(char[1:]) + foo(s[:2]) * foo(s[2:])。\n递归加动态规划，很容易就写出有 Bug 的代码来。\n一些特殊情况需要考虑完全，\n不然就增加了很多试错的时间。\n一开始写了个递归的版本，修修改改，最后通过了。\n但看了 StefanPochmann 的版本，\n发现并不需要这么麻烦。\n研究了一下他的思路，自己用 Common Lisp 实现了一下：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  (defun num-decodings (s) (let ((prev \u0026#34;\u0026#34;) (pw 0) (cw (if (string\u0026gt; s \u0026#34;0\u0026#34;) 1 0))) (loop for curr across s do (psetf pw cw prev curr cw (+ (if (char\u0026gt; curr #\\0) cw 0) (if (\u0026lt; 9 (parse-integer (format nil \u0026#34;~a~a\u0026#34; prev curr)) 27) pw 0))) finally (return cw))))   即便使用 psetf 平行赋值，代码行数也比 Python 的实现要多。\n当然，这也跟我对 Common Lisp 并不熟悉有关，\n以后再看看。\n"
 },
 {
 	"uri": "http://rrcgat.github.io/zh/tags/leetcode/",

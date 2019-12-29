@@ -1,33 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rrcgat&#39;s blog</title>
     <link>http://rrcgat.github.io/zh/</link>
     <description>Recent content on Rrcgat&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
+    <webMaster>rrcgat@gmail.com (rragat)</webMaster>
     <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 01 Dec 2019 23:36:12 +0800</lastBuildDate>
     
-	<atom:link href="http://rrcgat.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://rrcgat.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>91. Decode Ways</title>
-      <link>http://rrcgat.github.io/zh/notes/91-decode-ways/</link>
-      <pubDate>Sun, 01 Dec 2019 23:36:12 +0800</pubDate>
+    
       
-      <guid>http://rrcgat.github.io/zh/notes/91-decode-ways/</guid>
-      <description>问题并不复杂，要求对指定信息按指定方式解码。 假设输入是 s，求解函数是 foo， 则 foo(s) = foo(s[0]) * foo(char[1:]) + foo(s[:2]) * foo(s[2:])。 递归加动态规划，很容易就</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://rrcgat.github.io/zh/about/</link>
-      <pubDate>Sun, 10 Nov 2019 16:40:53 +0800</pubDate>
+      <item>
+        <title>91. Decode Ways</title>
+        <link>http://rrcgat.github.io/zh/notes/91-decode-ways/</link>
+        <pubDate>Sun, 01 Dec 2019 23:36:12 +0800</pubDate>
+        <author>rrcgat@gmail.com (rragat)</author>
+        <guid>http://rrcgat.github.io/zh/notes/91-decode-ways/</guid>
+        <description>问题并不复杂，要求对指定信息按指定方式解码。 假设输入是 s，求解函数是 foo， 则 foo(s) = foo(s[0]) * foo(char[1:]) + foo(s[:2]) * foo(s[2:])。 递归加动态规划，很容易就</description>
+      </item>
       
-      <guid>http://rrcgat.github.io/zh/about/</guid>
-      <description>阅读、学习、找乐子。</description>
-    </item>
+      <item>
+        <title>About</title>
+        <link>http://rrcgat.github.io/zh/about/</link>
+        <pubDate>Sun, 10 Nov 2019 16:40:53 +0800</pubDate>
+        <author>rrcgat@gmail.com (rragat)</author>
+        <guid>http://rrcgat.github.io/zh/about/</guid>
+        <description>阅读、学习、找乐子。</description>
+      </item>
+      
     
   </channel>
 </rss>
