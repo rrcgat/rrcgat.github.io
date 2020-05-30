@@ -14,7 +14,7 @@
     <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
     <webMaster>rrcgat@gmail.com (rragat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 02 Dec 2019 14:06:47 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:14:58 +0800</lastBuildDate>
     
         <atom:link href="http://rrcgat.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,30 @@
         
       
 
+      
+      <item>
+        <title>Python 进程间通信</title>
+        <link>http://rrcgat.github.io/en/posts/python-icp/</link>
+        <pubDate>Mon, 25 May 2020 00:14:58 +0800</pubDate>
+        <author>rrcgat@gmail.com (rragat)</author>
+        <atom:modified>Mon, 25 May 2020 00:14:58 +0800</atom:modified>
+        <guid>http://rrcgat.github.io/en/posts/python-icp/</guid>
+        <description>进程间通信的几种方式 参考维基百科的分类，进程间通信主要有以下几种： 文件（File） 信号（Signal） 套接字（Socket） Unix 域套接字（Un</description>
+        
+        <dc:creator>rragat</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Python</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>92. Reverse Linked List II</title>
