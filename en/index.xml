@@ -14,7 +14,7 @@
     <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
     <webMaster>rrcgat@gmail.com (rragat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 25 May 2020 00:14:58 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:18:08 +0800</lastBuildDate>
     
         <atom:link href="http://rrcgat.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,30 @@
         
       
 
+      
+      <item>
+        <title>Common Lisp 中的相等性判断</title>
+        <link>http://rrcgat.github.io/en/posts/common-lisp-equality/</link>
+        <pubDate>Wed, 03 Jun 2020 00:18:08 +0800</pubDate>
+        <author>rrcgat@gmail.com (rragat)</author>
+        <atom:modified>Wed, 03 Jun 2020 00:18:08 +0800</atom:modified>
+        <guid>http://rrcgat.github.io/en/posts/common-lisp-equality/</guid>
+        <description>Common Lisp 判断对象是否相等的函数比较多，这里记录一下目前遇到的用于判断相等的函数。 相等性判断函数 = 函数 = 用于判断数值（numbers）是否相等（不</description>
+        
+        <dc:creator>rragat</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>Common Lisp</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>Python 进程间通信</title>

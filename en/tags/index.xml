@@ -14,13 +14,31 @@
     <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
     <webMaster>rrcgat@gmail.com (rragat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 25 May 2020 00:14:58 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 00:18:08 +0800</lastBuildDate>
     
         <atom:link href="http://rrcgat.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Common Lisp</title>
+        <link>http://rrcgat.github.io/en/tags/common-lisp/</link>
+        <pubDate>Wed, 03 Jun 2020 00:18:08 +0800</pubDate>
+        <author>rrcgat@gmail.com (rragat)</author>
+        
+        <guid>http://rrcgat.github.io/en/tags/common-lisp/</guid>
+        <description></description>
+        
+        <dc:creator>rragat</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Python</title>
