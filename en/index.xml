@@ -14,7 +14,7 @@
     <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
     <webMaster>rrcgat@gmail.com (rragat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sat, 27 Jun 2020 23:16:05 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 00:14:25 +0800</lastBuildDate>
     
         <atom:link href="http://rrcgat.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,30 @@
         
       
 
+      
+      <item>
+        <title>fastText</title>
+        <link>http://rrcgat.github.io/en/posts/fasttext/</link>
+        <pubDate>Mon, 29 Jun 2020 00:14:25 +0800</pubDate>
+        <author>rrcgat@gmail.com (rragat)</author>
+        <atom:modified>Mon, 29 Jun 2020 00:14:25 +0800</atom:modified>
+        <guid>http://rrcgat.github.io/en/posts/fasttext/</guid>
+        <description>fastText 是用于构建词向量和文本分类的工具。它基于 subword 构建词向量， 计算过程类似于 Word2Vec 的 CBOW 模型，使用 hashing trick 进行优化（降维）。 Subword Subword 是比单词更小的元素，他们的基</description>
+        
+        <dc:creator>rragat</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>nlp</category>
+            
+          
+        
+        
+        
+      </item>
       
       <item>
         <title>GloVe</title>
