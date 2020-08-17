@@ -11,8 +11,8 @@
     <description>Recent content on Rrcgat&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
-    <webMaster>rrcgat@gmail.com (rragat)</webMaster>
+    <managingEditor>rrcgat@gmail.com (rrcgat)</managingEditor>
+    <webMaster>rrcgat@gmail.com (rrcgat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 17 Aug 2020 23:00:28 +0800</lastBuildDate>
     
@@ -47,12 +47,12 @@
         <title>Datawhale Leetcode 1</title>
         <link>http://rrcgat.github.io/en/posts/datawhale-leetcode-1/</link>
         <pubDate>Mon, 17 Aug 2020 23:00:28 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Mon, 17 Aug 2020 23:00:28 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/datawhale-leetcode-1/</guid>
         <description>50. Pow(x, n) https://leetcode.com/problems/powx-n Think 实现计算 x 的 n 次幂。 n == 0，直接返回 1。 n &amp;gt; 0 时，将 x 相乘 n 次即可。 n &amp;lt; 0 时，将 x 相乘 n 次，假设为 res，返回 1/res。 但直接计</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -65,12 +65,12 @@
         <title>ELMo, GPT and BERT</title>
         <link>http://rrcgat.github.io/en/posts/elmo-gpt-bert/</link>
         <pubDate>Fri, 03 Jul 2020 17:49:43 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Fri, 03 Jul 2020 17:49:43 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/elmo-gpt-bert/</guid>
         <description>在已经有了 Word2Vec、GloVe 和 fastText 等各种词向量工具的时候，静态词向量的不足慢慢显现出来了，那就是不能解决一词多义的问题。 之后出现的 E</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -89,12 +89,12 @@
         <title>fastText</title>
         <link>http://rrcgat.github.io/en/posts/fasttext/</link>
         <pubDate>Mon, 29 Jun 2020 00:14:25 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Mon, 29 Jun 2020 00:14:25 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/fasttext/</guid>
         <description>fastText 是用于构建词向量和文本分类的工具。它基于 subword 构建词向量， 计算过程类似于 Word2Vec 的 CBOW 模型，使用 hashing trick 进行优化（降维）。 Subword Subword 是比单词更小的元素，他们的基</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -113,12 +113,12 @@
         <title>GloVe</title>
         <link>http://rrcgat.github.io/en/posts/glove/</link>
         <pubDate>Sat, 27 Jun 2020 23:16:05 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Sat, 27 Jun 2020 23:16:05 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/glove/</guid>
         <description>在了解 GloVe 之前，先介绍一下 Count based 模型。 相比 Direct prediction，Count based 模型会使用到全局的统计数据，借助共现矩阵（co-occurrenc</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -137,12 +137,12 @@
         <title>词的表示-Word2Vec</title>
         <link>http://rrcgat.github.io/en/posts/cs224n-1-word2vec/</link>
         <pubDate>Mon, 22 Jun 2020 21:58:54 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Mon, 22 Jun 2020 21:58:54 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/cs224n-1-word2vec/</guid>
         <description>NLP，全称 Natural language processing，中文译为「自然语言处理」， 主要的研究对象是自然语言。 计算机中如何表示词语? 要让计算机理解自然语言，首先</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -165,12 +165,12 @@
         <title>Common Lisp 项目的代码结构</title>
         <link>http://rrcgat.github.io/en/posts/common-lisp-project-structure/</link>
         <pubDate>Sun, 07 Jun 2020 23:28:33 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Sun, 07 Jun 2020 23:28:33 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/common-lisp-project-structure/</guid>
         <description>相比于 Python 项目简单清晰的目录结构，Common Lisp 的项目结构要复杂不少，尤其是大型项目。但当你知道每个文件/目录的作用时，会发现这目录结构也不复</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -189,12 +189,12 @@
         <title>Common Lisp 中的相等性判断</title>
         <link>http://rrcgat.github.io/en/posts/common-lisp-equality/</link>
         <pubDate>Wed, 03 Jun 2020 00:18:08 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Wed, 03 Jun 2020 00:18:08 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/common-lisp-equality/</guid>
         <description>Common Lisp 判断对象是否相等的函数比较多，这里记录一下目前遇到的用于判断相等的函数。 相等性判断函数 = 函数 = 用于判断数值（numbers）是否相等（不</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -213,12 +213,12 @@
         <title>Python 进程间通信</title>
         <link>http://rrcgat.github.io/en/posts/python-icp/</link>
         <pubDate>Mon, 25 May 2020 00:14:58 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Mon, 25 May 2020 00:14:58 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/posts/python-icp/</guid>
         <description>进程间通信的几种方式 参考维基百科的分类，进程间通信主要有以下几种： 文件（File） 信号（Signal） 套接字（Socket） Unix 域套接字（Un</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -237,12 +237,12 @@
         <title>92. Reverse Linked List II</title>
         <link>http://rrcgat.github.io/en/notes/92-reverse-linked-list-ii/</link>
         <pubDate>Mon, 02 Dec 2019 14:06:47 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Mon, 02 Dec 2019 14:06:47 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/notes/92-reverse-linked-list-ii/</guid>
         <description>反转链表指定部分，稍微思考一下就有了思路，几个临界点需要注意一下。 一开始使用一个大的循环，在循环中每次判断临界值。 这样写出来的代码不高效，也</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -261,12 +261,12 @@
         <title>91. Decode Ways</title>
         <link>http://rrcgat.github.io/en/notes/91-decode-ways/</link>
         <pubDate>Sun, 01 Dec 2019 23:36:12 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Sun, 01 Dec 2019 23:36:12 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/notes/91-decode-ways/</guid>
         <description>问题并不复杂，要求对指定信息按指定方式解码。 假设输入是 s，求解函数是 foo， 则 foo(s) = foo(s[0]) * foo(char[1:]) + foo(s[:2]) * foo(s[2:])。 递归加动态规划，很容易就</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         

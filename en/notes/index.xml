@@ -11,8 +11,8 @@
     <description>Recent content in Notes on Rrcgat&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>rrcgat@gmail.com (rragat)</managingEditor>
-    <webMaster>rrcgat@gmail.com (rragat)</webMaster>
+    <managingEditor>rrcgat@gmail.com (rrcgat)</managingEditor>
+    <webMaster>rrcgat@gmail.com (rrcgat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
     <lastBuildDate>Mon, 02 Dec 2019 14:06:47 +0800</lastBuildDate>
     
@@ -26,12 +26,12 @@
         <title>92. Reverse Linked List II</title>
         <link>http://rrcgat.github.io/en/notes/92-reverse-linked-list-ii/</link>
         <pubDate>Mon, 02 Dec 2019 14:06:47 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Mon, 02 Dec 2019 14:06:47 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/notes/92-reverse-linked-list-ii/</guid>
         <description>反转链表指定部分，稍微思考一下就有了思路，几个临界点需要注意一下。 一开始使用一个大的循环，在循环中每次判断临界值。 这样写出来的代码不高效，也</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
@@ -50,12 +50,12 @@
         <title>91. Decode Ways</title>
         <link>http://rrcgat.github.io/en/notes/91-decode-ways/</link>
         <pubDate>Sun, 01 Dec 2019 23:36:12 +0800</pubDate>
-        <author>rrcgat@gmail.com (rragat)</author>
+        <author>rrcgat@gmail.com (rrcgat)</author>
         <atom:modified>Sun, 01 Dec 2019 23:36:12 +0800</atom:modified>
         <guid>http://rrcgat.github.io/en/notes/91-decode-ways/</guid>
         <description>问题并不复杂，要求对指定信息按指定方式解码。 假设输入是 s，求解函数是 foo， 则 foo(s) = foo(s[0]) * foo(char[1:]) + foo(s[:2]) * foo(s[2:])。 递归加动态规划，很容易就</description>
         
-        <dc:creator>rragat</dc:creator>
+        <dc:creator>rrcgat</dc:creator>
         
         
         
