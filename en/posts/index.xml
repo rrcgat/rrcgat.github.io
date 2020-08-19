@@ -14,13 +14,31 @@
     <managingEditor>rrcgat@gmail.com (rrcgat)</managingEditor>
     <webMaster>rrcgat@gmail.com (rrcgat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 17 Aug 2020 23:00:28 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2020 21:53:33 +0800</lastBuildDate>
     
         <atom:link href="http://rrcgat.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
 
+      
+      <item>
+        <title>Datawhale Leetcode 2</title>
+        <link>http://rrcgat.github.io/en/posts/datawhale-leetcode-2/</link>
+        <pubDate>Wed, 19 Aug 2020 21:53:33 +0800</pubDate>
+        <author>rrcgat@gmail.com (rrcgat)</author>
+        <atom:modified>Wed, 19 Aug 2020 21:53:33 +0800</atom:modified>
+        <guid>http://rrcgat.github.io/en/posts/datawhale-leetcode-2/</guid>
+        <description>5. Longest Palindromic Substring https://leetcode.com/problems/longest-palindromic-substring Think 寻找最长回文子串。 一开始使用「动态规划」查找，结果超时了，在此基础上怎么优化都不行。 最后没办法，只能看以前的求解思路。 之前的求解</description>
+        
+        <dc:creator>rrcgat</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Datawhale Leetcode 1</title>

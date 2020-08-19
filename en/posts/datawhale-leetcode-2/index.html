@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Datawhale Leetcode 1 – Rrcgat&#39;s blog</title>
+    <title>Datawhale Leetcode 2 – Rrcgat&#39;s blog</title>
     
 
 
@@ -556,7 +556,7 @@
     
     var baseurl = JSON.parse("\"http://rrcgat.github.io/\"");
     
-    var permalink = JSON.parse("\"http://rrcgat.github.io/en/posts/datawhale-leetcode-1/\"");
+    var permalink = JSON.parse("\"http://rrcgat.github.io/en/posts/datawhale-leetcode-2/\"");
     var searchResults = null;
     var searchMenu = null;
     var searchText = null;
@@ -1215,16 +1215,16 @@
 <meta name="description" content="rrcgat&#39;s blog" />
 
 
-<meta name="created" content="2020-08-17T23:00:28&#43;0800">
-<meta name="modified" content="2020-08-17T23:00:28&#43;0800">
-<meta property="article:published_time" content="2020-08-17T23:00:28&#43;0800">
+<meta name="created" content="2020-08-19T21:53:33&#43;0800">
+<meta name="modified" content="2020-08-19T21:53:33&#43;0800">
+<meta property="article:published_time" content="2020-08-19T21:53:33&#43;0800">
 
 <meta name="author" content="rrcgat">
 
 
 <meta property="og:site_name" content="Rrcgat&#39;s blog">
-<meta property="og:title" content="Datawhale Leetcode 1">
-<meta property="og:url" content="http://rrcgat.github.io/en/posts/datawhale-leetcode-1/">
+<meta property="og:title" content="Datawhale Leetcode 2">
+<meta property="og:url" content="http://rrcgat.github.io/en/posts/datawhale-leetcode-2/">
 <meta property="og:type" content="article">
 <meta property="og:description" content="rrcgat&#39;s blog">
 
@@ -1237,7 +1237,7 @@
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
 
-<link rel="canonical" href="http://rrcgat.github.io/en/posts/datawhale-leetcode-1/">
+<link rel="canonical" href="http://rrcgat.github.io/en/posts/datawhale-leetcode-2/">
 
 <link rel="manifest" href="/manifest.json">
 
@@ -1251,11 +1251,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Datawhale Leetcode 1",
-    "datePublished": "2020-08-17T23:00:28+08:00",
-    "dateModified": "2020-08-17T23:00:28+08:00",
-    "url" : "http://rrcgat.github.io/en/posts/datawhale-leetcode-1/",
-    "description": "50. Pow(x, n) https://leetcode.com/problems/powx-n Think 实现计算 x 的 n 次幂。 n == 0，直接返回 1。 n \u0026gt; 0 时，将 x 相乘 n 次即可。 n \u0026lt; 0 时，将 x 相乘 n 次，假设为 res，返回 1/res。 但直接计",
+    "headline": "Datawhale Leetcode 2",
+    "datePublished": "2020-08-19T21:53:33+08:00",
+    "dateModified": "2020-08-19T21:53:33+08:00",
+    "url" : "http://rrcgat.github.io/en/posts/datawhale-leetcode-2/",
+    "description": "5. Longest Palindromic Substring https://leetcode.com/problems/longest-palindromic-substring Think 寻找最长回文子串。 一开始使用「动态规划」查找，结果超时了，在此基础上怎么优化都不行。 最后没办法，只能看以前的求解思路。 之前的求解",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http://rrcgat.github.io/"
@@ -1543,7 +1543,7 @@
   
   <li  class="is-active" >
     
-      <span>Datawhale Leetcode 1</span>
+      <span>Datawhale Leetcode 2</span>
     
   </li>
   
@@ -1555,13 +1555,13 @@
   <div class="single ">
     <div class="single__nojs">This page looks best with JavaScript enabled</div>
     <script>document.querySelector('.single').classList.remove('hide'); document.querySelector('.single__nojs').classList.add('hide');</script>
-    <h2 class="single__title" data-ani="true">Datawhale Leetcode 1</h2>
+    <h2 class="single__title" data-ani="true">Datawhale Leetcode 2</h2>
     <div class="single__meta">
       
 <div class="single__infos">
-  <time class="single__info" title="Written At">📅&nbsp;Aug 17, 2020 </time>
+  <time class="single__info" title="Written At">📅&nbsp;Aug 19, 2020 </time>
   
-  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;2&nbsp;min read </span>
+  &nbsp;&middot;&nbsp; <span class="single__info" title="Reading Time"> ☕&nbsp;3&nbsp;min read </span>
   
   <span class="single__info">
     
@@ -1575,21 +1575,77 @@
     </div>
     <article class="single__contents" data-dir="ltr" data-ani="true">
       
-      <h2 id="50-powx-n">50. Pow(x, n)</h2>
-<p><a href="https://leetcode.com/problems/powx-n">https://leetcode.com/problems/powx-n</a></p>
+      <h2 id="5-longest-palindromic-substring">5. Longest Palindromic Substring</h2>
+<p><a href="https://leetcode.com/problems/longest-palindromic-substring">https://leetcode.com/problems/longest-palindromic-substring</a></p>
 <h3 id="think">Think</h3>
-<p>实现计算 <code>x</code> 的 <code>n</code> 次幂。</p>
+<p>寻找最长回文子串。</p>
+<p>一开始使用「动态规划」查找，结果超时了，在此基础上怎么优化都不行。<br />
+最后没办法，只能看以前的求解思路。</p>
+<p>之前的求解思路是，记录着一个最大的回文子串长度 <code>longest</code>，遍历字符串，<br />
+假设此时的索引为 <code>i</code>，则有：</p>
 <ol>
-<li><code>n == 0</code>，直接返回 <code>1</code>。</li>
-<li><code>n &gt; 0</code> 时，将 <code>x</code> 相乘 <code>n</code> 次即可。</li>
-<li><code>n &lt; 0</code> 时，将 <code>x</code> 相乘 <code>n</code> 次，假设为 <code>res</code>，返回 <code>1/res</code>。</li>
+<li><code>s[i-longest-1:i]</code> 为回文串，即 <code>aba</code> 型，此时 <code>longest</code> 增加 <code>1</code></li>
+<li><code>s[i-longest-2:i]</code> 为回文串，即 <code>abba</code> 型，此时 <code>longest</code> 增加 <code>2</code></li>
 </ol>
-<p>但直接计算次数太多，可以对半进行计算。</p>
+<p>但初始的边界和计算时的条件边界要整理好，不然容易出错。</p>
 <blockquote>
-<p>Runtime: 24 ms, faster than 96.21% of Python3 online submissions for Pow(x, n).<br />
-Memory Usage: 13.9 MB, less than 39.97% of Python3 online submissions for Pow(x, n).</p>
+<p>Runtime: 92 ms, faster than 96.46% of Python3 online submissions for Longest Palindromic Substring.<br />
+Memory Usage: 13.8 MB, less than 79.89% of Python3 online submissions for Longest Palindromic Substring.</p>
 </blockquote>
+<p>看了其他人的思路，比较快的，都差不多。</p>
 <h3 id="code">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">longestPalindrome</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">longest</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="n">longest</span> <span class="o">-</span> <span class="mi">2</span>
+            <span class="k">if</span> <span class="n">start</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">i</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">longest</span> <span class="o">+=</span> <span class="mi">2</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">start</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">i</span><span class="p">][::</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                    <span class="n">longest</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">res</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">res</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="72-edit-distance">72. Edit Distance</h2>
+<p><a href="https://leetcode.com/problems/edit-distance">https://leetcode.com/problems/edit-distance</a></p>
+<h3 id="think-1">Think</h3>
+<p>计算两个单词之间最短的编辑距离。</p>
+<p>假设函数 <code>dp(a, b)</code> 返回单词 <code>a, b</code> 的最小编辑距离，则有：</p>
+<ol>
+<li>当 <code>a == '' or b == ''</code> 时，返回 <code>len(a) + len(b)</code></li>
+<li>当 <code>a[0] == b[0]</code> 时，返回 <code>dp(a[1:], b[1:])</code></li>
+<li>否则，返回 <code>dp(a[1:], b[1:]), dp(a, b[1:]), dp(a[1:], b)</code> 中的最小值。</li>
+</ol>
+<p>为了避免重复计算，需要缓存一下计算结果。</p>
+<blockquote>
+<p>Runtime: 136 ms, faster than 91.41% of Python3 online submissions for Edit Distance.<br />
+Memory Usage: 19.2 MB, less than 15.32% of Python3 online submissions for Edit Distance.</p>
+</blockquote>
+<h3 id="code-1">Code</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1614,42 +1670,70 @@ Memory Usage: 13.9 MB, less than 39.97% of Python3 online submissions for Pow(x,
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">myPow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
-            <span class="k">def</span> <span class="nf">helper</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-                <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="mi">1</span>
-                <span class="n">half</span> <span class="o">=</span> <span class="n">helper</span><span class="p">(</span><span class="n">n</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-                <span class="n">res</span> <span class="o">=</span> <span class="n">half</span> <span class="o">*</span> <span class="n">half</span>
-                <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
-                    <span class="n">res</span> <span class="o">*=</span> <span class="n">x</span>
-                <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-                    <span class="k">return</span> <span class="n">res</span>
-                <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">res</span>
-            <span class="n">res</span> <span class="o">=</span> <span class="n">helper</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-            <span class="n">res</span> <span class="o">=</span> <span class="n">res</span> <span class="o">*</span> <span class="n">res</span>
-            <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
-                <span class="n">res</span> <span class="o">*=</span> <span class="n">x</span>
-            <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">res</span>
-            <span class="k">return</span> <span class="mi">1</span><span class="o">/</span><span class="n">res</span>
+    <span class="k">def</span> <span class="nf">minDistance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">word2</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">dp</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="ow">in</span> <span class="n">memo</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">b</span><span class="p">:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span>
+            <span class="k">elif</span> <span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span> <span class="o">=</span>  <span class="nb">min</span><span class="p">(</span>
+                    <span class="n">dp</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="n">dp</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="n">dp</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">]</span>
+        <span class="n">memo</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">return</span> <span class="n">dp</span><span class="p">(</span><span class="n">word1</span><span class="p">,</span> <span class="n">word2</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="53-maximum-subarray">53. Maximum Subarray</h2>
-<p><a href="https://leetcode.com/problems/maximum-subarray">https://leetcode.com/problems/maximum-subarray</a></p>
-<h3 id="think-1">Think</h3>
-<p>找出子数组最大之和。</p>
-<p>假设 <code>prev</code> 保存了数组 <code>nums[:n]</code> 中包含 <code>nums[n-1]</code> 的子数组最大之和。</p>
-<p>对于第 <code>n</code> 个元素：</p>
-<ul>
-<li>当 <code>prev &gt; 0</code> 时，令 <code>prev += nums[n]</code></li>
-<li>否则，令 <code>prev = nums[n]</code></li>
-</ul>
-<p>计算期间保存计算出的最大子数组之和。</p>
-<blockquote>
-<p>Runtime: 76 ms, faster than 48.24% of Python3 online submissions for Maximum Subarray.<br />
-Memory Usage: 14.5 MB, less than 83.64% of Python3 online submissions for Maximum Subarray.</p>
+</div><h2 id="198-house-robber">198. House Robber</h2>
+<p><a href="https://leetcode.com/problems/house-robber">https://leetcode.com/problems/house-robber</a></p>
+<h3 id="think-2">Think</h3>
+<p>在数组中获取不相邻元素的最大和。</p>
+<p>假设函数 <code>dp(nums)</code> 分别返回包含和不包含最后一个元素的最大和：</p>
+<pre><code>dp(nums) = nums[-1] + dp(nums[:-1])[0], max(dp(nums[:-1]))
+</code></pre><blockquote>
+<p>Runtime: 20 ms, faster than 99.27% of Python3 online submissions for House Robber.<br />
+Memory Usage: 13.9 MB, less than 48.62% of Python3 online submissions for House Robber.</p>
 </blockquote>
-<h3 id="code-1">Code</h3>
+<h3 id="code-2">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">rob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="n">include</span><span class="p">,</span> <span class="n">exclude</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+            <span class="n">include</span><span class="p">,</span> <span class="n">exclude</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="n">exclude</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="213-house-robber-ii">213. House Robber II</h2>
+<p><a href="https://leetcode.com/problems/house-robber-ii">https://leetcode.com/problems/house-robber-ii</a></p>
+<h3 id="think-3">Think</h3>
+<p>跟 198 题类似，但数组头尾看成是相连的。</p>
+<p>可以直接拆分成两个数组，一个包含头，一个包含尾，算法沿用 198 题的即可。</p>
+<p>但需要注意一下边界，因为两个数组比原数组少了一个元素。</p>
+<blockquote>
+<p>Runtime: 16 ms, faster than 99.93% of Python3 online submissions for House Robber II.<br />
+Memory Usage: 13.9 MB, less than 44.68% of Python3 online submissions for House Robber II.</p>
+</blockquote>
+<h3 id="code-3">Code</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1662,52 +1746,145 @@ Memory Usage: 14.5 MB, less than 83.64% of Python3 online submissions for Maximu
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">maxSubArray</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-        <span class="n">prev</span> <span class="o">=</span> <span class="n">max_sum</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
-            <span class="k">if</span> <span class="n">prev</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="n">prev</span> <span class="o">+=</span> <span class="n">n</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">prev</span> <span class="o">=</span> <span class="n">n</span>
-            <span class="n">max_sum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_sum</span><span class="p">,</span> <span class="n">prev</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">max_sum</span>
+    <span class="k">def</span> <span class="nf">rob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+            <span class="k">return</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">include1</span><span class="p">,</span> <span class="n">exclude1</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">include1</span><span class="p">,</span> <span class="n">exclude1</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="n">exclude1</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">include1</span><span class="p">,</span> <span class="n">exclude1</span><span class="p">)</span>
+
+        <span class="n">include2</span><span class="p">,</span> <span class="n">exclude2</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">[</span><span class="mi">2</span><span class="p">:]:</span>
+            <span class="n">include2</span><span class="p">,</span> <span class="n">exclude2</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="n">exclude2</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">include2</span><span class="p">,</span> <span class="n">exclude2</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">include1</span><span class="p">,</span> <span class="n">exclude1</span><span class="p">,</span> <span class="n">include2</span><span class="p">,</span> <span class="n">exclude2</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="169-majority-element">169. Majority Element</h2>
-<p><a href="https://leetcode.com/problems/majority-element">https://leetcode.com/problems/majority-element</a></p>
-<h3 id="think-2">Think</h3>
-<p>找出数组中的多数元素（$\lfloor{n/2}\rfloor$）。</p>
-<p>首先想到的是使用字典保存对应元素出现的次数，最后选出出现次数最多的。</p>
-<p>Python 中可以利用 <code>collections.Counter</code> 更方便地求解。</p>
+</div><h2 id="516-longest-palindromic-subsequence">516. Longest Palindromic Subsequence</h2>
+<p><a href="https://leetcode.com/problems/longest-palindromic-subsequence">https://leetcode.com/problems/longest-palindromic-subsequence</a></p>
+<h3 id="think-4">Think</h3>
+<p>最长回文子序列。跟子串不同的是，子序列不要求连续。</p>
+<p>比较粗暴的解法是找出所有的子序列，再判断是否是回文子串，没什么技巧，还可能会超时。</p>
+<p>想到可以从两边往中间查找，假设两端指针为 <code>low</code> 和 <code>high</code>，则有</p>
+<ul>
+<li>当 <code>low &lt; high</code> 时：
+<ul>
+<li><code>s[low] == s[high]</code> 时，返回 <code>dp(low, high) = 2 + dp(low+1, high-1)</code></li>
+<li>否则，返回 <code>max(dp(low, high-1), dp(low+1, high))</code></li>
+</ul>
+</li>
+<li><code>low == high</code> 时，返回 <code>1</code></li>
+<li>否则，返回 <code>0</code></li>
+</ul>
 <blockquote>
-<p>Runtime: 164 ms, faster than 97.18% of Python3 online submissions for Majority Element.<br />
-Memory Usage: 15.3 MB, less than 13.40% of Python3 online submissions for Majority Element.</p>
+<p>Runtime: 1156 ms, faster than 86.97% of Python3 online submissions for Longest Palindromic Subsequence.<br />
+Memory Usage: 211.5 MB, less than 8.05% of Python3 online submissions for Longest Palindromic Subsequence.</p>
 </blockquote>
-<p>但看了讨论区才发现可以更简单点，基于一个事实：题目要求的多数元素，在排序后，肯定有一个元素位置数组中心。<br />
-于是排序后取中值即可：</p>
+<p>从结果来看，明显不太好，空间复杂度太高了。</p>
+<p>看了讨论区和别人的提交，太优雅了。</p>
+<p>假设已知 <code>dp[i+1][j-1], dp[i][j-1], d[i+1][j]</code>，那么 <code>dp[i][j]</code> 有两种情况：</p>
+<ol>
+<li><code>s[i] == s[j]</code>，<code>dp[i][j] = 2 + dp[i+1][j - 1]</code></li>
+<li>否则，<code>dp[i][j] = max(dp[i+1][j], dp[i][j-1])</code></li>
+</ol>
+<p>有了思路，代码不难写出。但进一步的优化是，使用 $O(n)$ 的空间。这里利用的是，<br />
+在求解出 <code>dp[i][j]</code> 后，一些已知元素可以丢弃而不影响结果。</p>
+<h3 id="code-4">Code</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="nb">sorted</span><span class="p">(</span><span class="n">nums</span><span class="p">)[</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>同时也看到了一个更精彩的解法：<a href="http://www.cs.utexas.edu/~moore/best-ideas/mjrty/">A Linear Time Majority Vote Algorithm</a></p>
-<h3 id="code-2">Code</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">majorityElement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">Counter</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">def</span> <span class="nf">longestPalindromeSubseq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">dp</span><span class="p">(</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span> <span class="ow">in</span> <span class="n">memo</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">low</span> <span class="o">==</span> <span class="n">high</span><span class="p">:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">low</span> <span class="o">&gt;</span> <span class="n">high</span><span class="p">:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">elif</span> <span class="n">s</span><span class="p">[</span><span class="n">low</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">high</span><span class="p">]:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">dp</span><span class="p">(</span><span class="n">low</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">memo</span><span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span>
+                    <span class="n">dp</span><span class="p">(</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+                    <span class="n">dp</span><span class="p">(</span><span class="n">low</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">high</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">]</span>
+
+        <span class="n">memo</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">return</span> <span class="n">dp</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="674-longest-continuous-increasing-subsequence">674. Longest Continuous Increasing Subsequence</h2>
+<p><a href="https://leetcode.com/problems/longest-continuous-increasing-subsequence">https://leetcode.com/problems/longest-continuous-increasing-subsequence</a></p>
+<h3 id="think-5">Think</h3>
+<p>因为需要是要连续的，所以只需记住前一个元素即可，中间用临时值记录连续递增的个数。</p>
+<blockquote>
+<p>Runtime: 76 ms, faster than 89.01% of Python3 online submissions for Longest Continuous Increasing Subsequence.<br />
+Memory Usage: 15.3 MB, less than 5.38% of Python3 online submissions for Longest Continuous Increasing Subsequence.</p>
+</blockquote>
+<h3 id="code-5">Code</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">findLengthOfLCIS</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="n">prev</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">count</span> <span class="o">=</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+            <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">prev</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">prev</span> <span class="o">=</span> <span class="n">n</span>
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
 </div>
@@ -1771,13 +1948,13 @@ Memory Usage: 15.3 MB, less than 13.40% of Python3 online submissions for Majori
     
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2frrcgat.github.io%2fen%2fposts%2fdatawhale-leetcode-1%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2frrcgat.github.io%2fen%2fposts%2fdatawhale-leetcode-2%2f" title="Facebook" aria-label="Facebook Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="facebook" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
         </a>
       
     
       
-        <a href="https://twitter.com/intent/tweet?text=Datawhale%20Leetcode%201&url=http%3a%2f%2frrcgat.github.io%2fen%2fposts%2fdatawhale-leetcode-1%2f&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
+        <a href="https://twitter.com/intent/tweet?text=Datawhale%20Leetcode%202&url=http%3a%2f%2frrcgat.github.io%2fen%2fposts%2fdatawhale-leetcode-2%2f&via=" title="Twitter" aria-label="Twitter Share Button" class="donation__item" target="_blank" rel="noreferrer" data-type="share">
           <svg data-name="twitter" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="35" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/></svg>
         </a>
       
@@ -1903,21 +2080,14 @@ Memory Usage: 15.3 MB, less than 13.40% of Python3 online submissions for Majori
 <nav class="pagination-single">
   
     
-      <a href="http://rrcgat.github.io/en/posts/elmo-gpt-bert/" class="pagination-single__left">
+      <a href="http://rrcgat.github.io/en/posts/datawhale-leetcode-1/" class="pagination-single__left">
         <div class="pagination-single__icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
         </div>
-        <div class="pagination-single__left-title">ELMo, GPT and BERT</div>      
+        <div class="pagination-single__left-title">Datawhale Leetcode 1</div>      
       </a>
     
     <div class="grow"></div>
-    
-      <a href="http://rrcgat.github.io/en/posts/datawhale-leetcode-2/" class="pagination-single__right">      
-        <div class="pagination-single__right-title">Datawhale Leetcode 2</div>
-        <div class="pagination-single__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
-        </div>
-      </a>
     
   
 </nav>
@@ -2328,22 +2498,40 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="toc " data-dir="ltr" data-folding="false" data-ani="true">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#50-powx-n">50. Pow(x, n)</a>
+    <li><a href="#5-longest-palindromic-substring">5. Longest Palindromic Substring</a>
       <ul>
         <li><a href="#think">Think</a></li>
         <li><a href="#code">Code</a></li>
       </ul>
     </li>
-    <li><a href="#53-maximum-subarray">53. Maximum Subarray</a>
+    <li><a href="#72-edit-distance">72. Edit Distance</a>
       <ul>
         <li><a href="#think-1">Think</a></li>
         <li><a href="#code-1">Code</a></li>
       </ul>
     </li>
-    <li><a href="#169-majority-element">169. Majority Element</a>
+    <li><a href="#198-house-robber">198. House Robber</a>
       <ul>
         <li><a href="#think-2">Think</a></li>
         <li><a href="#code-2">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#213-house-robber-ii">213. House Robber II</a>
+      <ul>
+        <li><a href="#think-3">Think</a></li>
+        <li><a href="#code-3">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#516-longest-palindromic-subsequence">516. Longest Palindromic Subsequence</a>
+      <ul>
+        <li><a href="#think-4">Think</a></li>
+        <li><a href="#code-4">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#674-longest-continuous-increasing-subsequence">674. Longest Continuous Increasing Subsequence</a>
+      <ul>
+        <li><a href="#think-5">Think</a></li>
+        <li><a href="#code-5">Code</a></li>
       </ul>
     </li>
   </ul>
@@ -3037,7 +3225,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
           
             
-              <a href="http://rrcgat.github.io/en/posts/datawhale-leetcode-1/" data-lang="en" class="dropdown-item is-active">English</a>
+              <a href="http://rrcgat.github.io/en/posts/datawhale-leetcode-2/" data-lang="en" class="dropdown-item is-active">English</a>
             
           
         
