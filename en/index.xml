@@ -14,7 +14,7 @@
     <managingEditor>rrcgat@gmail.com (rrcgat)</managingEditor>
     <webMaster>rrcgat@gmail.com (rrcgat)</webMaster>
     <copyright>©{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 20 Aug 2020 21:37:21 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 21:58:56 +0800</lastBuildDate>
     
         <atom:link href="http://rrcgat.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,24 @@
         
       
 
+      
+      <item>
+        <title>Datawhale Leetcode 4</title>
+        <link>http://rrcgat.github.io/en/posts/datawhale-leetcode-4/</link>
+        <pubDate>Mon, 24 Aug 2020 21:58:56 +0800</pubDate>
+        <author>rrcgat@gmail.com (rrcgat)</author>
+        <atom:modified>Mon, 24 Aug 2020 21:58:56 +0800</atom:modified>
+        <guid>http://rrcgat.github.io/en/posts/datawhale-leetcode-4/</guid>
+        <description>1. Two Sum https://leetcode.com/problems/two-sum Think 两数之和，经典问题，通过哈希表解决。 假设当前元素是 nums[i]，判断 target - nums[i] 是否在表中， 如果在，返回 table[target - nums[i]], i。 否则，令 table[nums[i]] = i。 Runtime: 52</description>
+        
+        <dc:creator>rrcgat</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>Datawhale Leetcode 3</title>
