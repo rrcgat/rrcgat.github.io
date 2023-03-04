@@ -1,0 +1,205 @@
+baseURL = 'https://rrcgat.github.io/'
+title = "Rrcgat"
+theme = "PaperMod"
+paginate = 5
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+# googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true
+
+defaultContentLanguage = 'zh'
+disableLanguages = ['en']
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+
+[languages.zh]
+languageName = "中文"
+weight = 1
+
+  [languages.zh.taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[languages.zh.menu.main]]
+identifier = "about"
+name = "关于我"
+url = "about/"
+weight = 5
+
+[[languages.zh.menu.main]]
+identifier = "archives"
+name = "归档"
+url = "archives/"
+weight = 6
+
+[[languages.zh.menu.main]]
+identifier = "posts"
+name = "文章"
+url = "posts/"
+weight = 7
+
+[[languages.zh.menu.main]]
+identifier = "categories"
+name = "分类"
+url = "categories/"
+weight = 8
+
+[[languages.zh.menu.main]]
+weight = 9
+identifier = "tags"
+name = "标签"
+url = "tags/"
+
+
+[languages.en]
+languageName = "English"
+weight = 2
+
+  [languages.en.taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "About"
+url = "about/"
+weight = 5
+
+[[languages.en.menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "archives/"
+weight = 6
+
+[[languages.en.menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "categories/"
+weight = 8
+
+[[languages.en.menu.main]]
+weight = 9
+identifier = "tags"
+name = "Tags"
+url = "tags/"
+
+[params]
+#color = 'linen'
+env = "production"
+title = "rrcgat"
+description = "Rrcgat's blog"
+keywords = [ "Blog", "Programming" ]
+# author = "Me"
+# images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "2006-01-02"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+
+  [params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
+  # safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  text = "Rrcgat"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
+
+  #[params.profileMode]
+  #enabled = false
+  #title = "ExampleSite"
+  #subtitle = "This is subtitle"
+  #imageUrl = "<img location>"
+  #imageWidth = 120
+  #imageHeight = 120
+  #imageTitle = "my image"
+
+  #  [[params.profileMode.buttons]]
+  #  name = "Posts"
+  #  url = "posts"
+
+  #  [[params.profileMode.buttons]]
+  #  name = "Archives"
+  #  url = "archives"
+
+  #  [[params.profileMode.buttons]]
+  #  name = "Tags"
+  #  url = "tags"
+
+  [params.homeInfoParams]
+  enabled = false
+  Title = "Hi there 👋"
+  Content = "I'm not ready."
+
+  # [[params.socialIcons]]
+  # name = "twitter"
+  # url = "https://twitter.com/"
+
+  # [[params.socialIcons]]
+  # name = "stackoverflow"
+  # url = "https://stackoverflow.com"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/rrcgat"
+
+  [[params.socialIcons]]
+  name = "rss"
+  url = "index.xml"
+
+# [params.analytics.google]
+# SiteVerificationTag = "XYZabc"
+#
+# [params.analytics.bing]
+# SiteVerificationTag = "XYZabc"
+#
+# [params.analytics.yandex]
+# SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  # [params.editPost]
+  # URL = "https://github.com/rrcgat/content"
+  # Text = "Suggest Changes"
+  # appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[markup.highlight]
+noClasses = false
