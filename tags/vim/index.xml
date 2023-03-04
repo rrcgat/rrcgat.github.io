@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Vim on Rrcgat</title>
+    <link>https://rrcgat.github.io/tags/vim/</link>
+    <description>Recent content in Vim on Rrcgat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Mar 2023 00:14:57 +0800</lastBuildDate><atom:link href="https://rrcgat.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于 Vim 自动切换输入法</title>
+      <link>https://rrcgat.github.io/posts/vim-auto-switch-input-method/</link>
+      <pubDate>Sun, 05 Mar 2023 00:14:57 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/vim-auto-switch-input-method/</guid>
+      <description>最近在折腾 Vim 配置，花了不少时间优化，可以说是差生文具多了。主要是把包管理器从 Packer 换成了 lazy.nvim，然后从 LazyVim 中抄了一些配置，顺便把目录组织结构换成 LazyVim 那样的方式进行组织。
+然后前段时间又在推上看到关于 Vim 编辑器下中英文切换的讨论。想要实现的效果是 Vim 在离开 INSERT 模式时，切换输入法到英文状态，当再次进入 INSERT 模式时，又自动切换回去。
+im-select 是比较多人推荐的工具，用于在命令行中切换输入法。该项目介绍的用法适用于 VSCodeVim，对于纯 Vim 没有提及。
+Vim 可以在不同事件发生时自动执行预先设置的命令，自动切换输入法应该也是类似。找到一个插件 vim-barbaric，看了下里面的源码，思路也是如此。于是往自己的 Vim 配置中加了以下几行代码：
+-- Auto switch input method local myim = vim.fn.system(&amp;#39;ibus engine&amp;#39;) local function switch_eng() myim = vim.fn.system(&amp;#39;ibus engine&amp;#39;) -- print(&amp;#34;switch to eng from: &amp;#34; .. myim) os.execute(&amp;#34;ibus engine xkb:us::eng&amp;#34;) end local function restore_normal_im() -- print(&amp;#34;restore to: &amp;#34; .. myim) os.execute(&amp;#34;ibus engine &amp;#34; .</description>
+    </item>
+    
+  </channel>
+</rss>

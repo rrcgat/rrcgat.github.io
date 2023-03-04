@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Python on Rrcgat</title>
+    <link>https://rrcgat.github.io/tags/python/</link>
+    <description>Recent content in Python on Rrcgat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 May 2020 00:14:58 +0800</lastBuildDate><atom:link href="https://rrcgat.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python 进程间通信</title>
+      <link>https://rrcgat.github.io/posts/python-icp/</link>
+      <pubDate>Mon, 25 May 2020 00:14:58 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/python-icp/</guid>
+      <description>进程间通信的几种方式 参考维基百科的分类，进程间通信主要有以下几种：
+文件（File） 信号（Signal） 套接字（Socket） Unix 域套接字（Unix domain socket） 消息队列（Message queue） 匿名管道（Anonymous pipe） 命名管道（Named pipe） 共享内存（Shared memory） 消息传递（Message passing） 内存映射文件（Memory-mapped file） 看下使用 Python 怎么实现。
+环境：Arch Linux + Python3.8
+文件 符合直觉，数据存在硬盘上，可基于文本或二进制。
+对于 pa.py
+SHARED_FILE = &amp;#39;/tmp/shared_file&amp;#39; def send(): with open(SHARED_FILE, &amp;#39;w&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as f: f.write(&amp;#39;some data...&amp;#39;) 对于 pb.py
+def receive(): with open(SHARED_FILE, encoding=&amp;#39;utf-8&amp;#39;) as f: print(f.read()) 为了避免竞争，数据流向是单向的，可使用两个或以上的文件进行双向通信。
+信号 通信偏向底层，且一般不用于传输数据。
+Python 中有 os.kill(pid, sig) 以及 signal 模块。 os.kill 发送 sig 给进程 pid，一般会意外终止进程 pid。</description>
+    </item>
+    
+  </channel>
+</rss>

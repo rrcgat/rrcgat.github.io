@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Rrcgat</title>
+    <link>https://rrcgat.github.io/posts/</link>
+    <description>Recent content in Posts on Rrcgat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Mar 2023 00:14:57 +0800</lastBuildDate><atom:link href="https://rrcgat.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于 Vim 自动切换输入法</title>
+      <link>https://rrcgat.github.io/posts/vim-auto-switch-input-method/</link>
+      <pubDate>Sun, 05 Mar 2023 00:14:57 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/vim-auto-switch-input-method/</guid>
+      <description>最近在折腾 Vim 配置，花了不少时间优化，可以说是差生文具多了。主要是把包管理器从 Packer 换成了 lazy.nvim，然后从 LazyVim 中抄了一些配置，顺便把目录组织结构换成 LazyVim 那样的方式进行组织。
+然后前段时间又在推上看到关于 Vim 编辑器下中英文切换的讨论。想要实现的效果是 Vim 在离开 INSERT 模式时，切换输入法到英文状态，当再次进入 INSERT 模式时，又自动切换回去。
+im-select 是比较多人推荐的工具，用于在命令行中切换输入法。该项目介绍的用法适用于 VSCodeVim，对于纯 Vim 没有提及。
+Vim 可以在不同事件发生时自动执行预先设置的命令，自动切换输入法应该也是类似。找到一个插件 vim-barbaric，看了下里面的源码，思路也是如此。于是往自己的 Vim 配置中加了以下几行代码：
+-- Auto switch input method local myim = vim.fn.system(&amp;#39;ibus engine&amp;#39;) local function switch_eng() myim = vim.fn.system(&amp;#39;ibus engine&amp;#39;) -- print(&amp;#34;switch to eng from: &amp;#34; .. myim) os.execute(&amp;#34;ibus engine xkb:us::eng&amp;#34;) end local function restore_normal_im() -- print(&amp;#34;restore to: &amp;#34; .. myim) os.execute(&amp;#34;ibus engine &amp;#34; .</description>
+    </item>
+    
+    <item>
+      <title>Common Lisp 项目的代码结构</title>
+      <link>https://rrcgat.github.io/posts/common-lisp-project-structure/</link>
+      <pubDate>Sun, 07 Jun 2020 23:28:33 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/common-lisp-project-structure/</guid>
+      <description>相比于 Python 项目简单清晰的目录结构，Common Lisp 的项目结构要复杂不少，尤其是大型项目。但当你知道每个文件/目录的作用时，会发现这目录结构也不复杂。
+以 Postmodern 项目为例，看看实际项目是怎样组织代码的。
+该项目目录结构如下：
+├── cl-postgres/... ├── cl-postgres.asd ├── postmodern/ │ ├── connect.lisp │ ├── ... │ ├── package.lisp │ └── tests │ ├── ... │ ├── test-package.lisp │ └── tests.lisp ├── postmodern.asd ├── simple-date/... ├── simple-date.asd ├── s-sql/... ├── s-sql.asd └── ... 这里省略了部分目录和文件，但不影响我们解读该目录结构。可以点击链接了解完整的目录结构。
+首先看最外层的文件，这里列出的都是以 .asd 为后缀的文件，这些文件描述了源代码间的依赖关系，使它们能按正确的顺序进行编译和加载。而这依靠的便是 ASDF 自动编译系统。
+ASDF，全称 Another System Definition Facility，该构建系统指定了 Common Lisp 程序中各系统的组成及控制各组件能按正确的顺序进行编译、加载和测试等等。
+ASDF, or Another System Definition Facility, is a build system: a tool for specifying how systems of Common Lisp software are made up of components (sub-systems and files), and how to operate on these components in the right order so that they can be compiled, loaded, tested, etc.</description>
+    </item>
+    
+    <item>
+      <title>Common Lisp 中的相等性判断</title>
+      <link>https://rrcgat.github.io/posts/common-lisp-equality/</link>
+      <pubDate>Wed, 03 Jun 2020 00:18:08 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/common-lisp-equality/</guid>
+      <description>Common Lisp 判断对象是否相等的函数比较多，这里记录一下目前遇到的用于判断相等的函数。
+相等性判断函数 = 函数 = 用于判断数值（numbers）是否相等（不判断类型），并且只能用于判断数值类型的元素。
+语法：
+;;; = &amp;amp;rest numbers+ =&amp;gt; generalized-boolean (= 1 1.0 #c(1 0)) ; =&amp;gt; T CHAR= / STRING= char= 用于判断多个字符是否相等，区分大小写。此外，不同实现中如果定义两个字符不同，char= 返回 NIL。
+If two characters differ in any implementation-defined attributes, then they are not char=.
+语法：
+;;; char= &amp;amp;rest characters+ =&amp;gt; generalized-boolean (char= #\d #\d) ; =&amp;gt; T string= 用于判断多个字符串是否相等，区分大小写。
+语法：
+;;; string= string1 string2 &amp;amp;key start1 end1 start2 end2 =&amp;gt; generalized-boolean (string= &amp;#34;foo&amp;#34; &amp;#34;foo&amp;#34;) ; =&amp;gt; T 可以比较两个字符串中指定的子序列。</description>
+    </item>
+    
+    <item>
+      <title>Python 进程间通信</title>
+      <link>https://rrcgat.github.io/posts/python-icp/</link>
+      <pubDate>Mon, 25 May 2020 00:14:58 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/python-icp/</guid>
+      <description>进程间通信的几种方式 参考维基百科的分类，进程间通信主要有以下几种：
+文件（File） 信号（Signal） 套接字（Socket） Unix 域套接字（Unix domain socket） 消息队列（Message queue） 匿名管道（Anonymous pipe） 命名管道（Named pipe） 共享内存（Shared memory） 消息传递（Message passing） 内存映射文件（Memory-mapped file） 看下使用 Python 怎么实现。
+环境：Arch Linux + Python3.8
+文件 符合直觉，数据存在硬盘上，可基于文本或二进制。
+对于 pa.py
+SHARED_FILE = &amp;#39;/tmp/shared_file&amp;#39; def send(): with open(SHARED_FILE, &amp;#39;w&amp;#39;, encoding=&amp;#39;utf-8&amp;#39;) as f: f.write(&amp;#39;some data...&amp;#39;) 对于 pb.py
+def receive(): with open(SHARED_FILE, encoding=&amp;#39;utf-8&amp;#39;) as f: print(f.read()) 为了避免竞争，数据流向是单向的，可使用两个或以上的文件进行双向通信。
+信号 通信偏向底层，且一般不用于传输数据。
+Python 中有 os.kill(pid, sig) 以及 signal 模块。 os.kill 发送 sig 给进程 pid，一般会意外终止进程 pid。</description>
+    </item>
+    
+  </channel>
+</rss>

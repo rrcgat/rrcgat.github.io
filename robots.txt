@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://rrcgat.github.io/sitemap.xml
