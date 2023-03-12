@@ -5,7 +5,18 @@
     <link>https://rrcgat.github.io/</link>
     <description>Recent content on Rrcgat</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 05 Mar 2023 00:14:57 +0800</lastBuildDate><atom:link href="https://rrcgat.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Mar 2023 22:22:21 +0800</lastBuildDate><atom:link href="https://rrcgat.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在终端中使用 OCR</title>
+      <link>https://rrcgat.github.io/posts/command-line-ocr/</link>
+      <pubDate>Sun, 12 Mar 2023 22:22:21 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/command-line-ocr/</guid>
+      <description>最近比较常用到 OCR 的功能，主要用的是 tesseract，再搭配终端访问剪贴板内容和一些其他工具，整体体验很流畅。
+首先需要安装 tesseract，Arch 下可一条命令解决：sudo pacman -S tesseract tesseract-data-chi_sim tesseract-data-eng，后两个是语言数据，chi_sim 和 eng 分别对应简体中文和英文。然后搭配 xclip 或 wl-paste 就可以食用了：
+# tesseract usage: `tesseract FILE OUTPUTBASE [...]` # If FILE is stdin or - then the standard input is used. # If OUTPUTBASE is stdout or - then the standard output is used. xclip -selection clipboard -t image/png -o|tesseract stdin stdout -l chi_sim+eng # on Wayland, you can yuse wl-paste: wl-paste -t image/png|tesseract -l chi_sim stdin stdout 为什么需要指定 MIME 类型？Linux 下剪贴板有多种类型（selection），主要包括 PRIMARY、CLIPBOARD 和 SECONDARY，常用的是 PRIMARY 和 CLIPBOARD。</description>
+    </item>
+    
     <item>
       <title>关于 Vim 自动切换输入法</title>
       <link>https://rrcgat.github.io/posts/vim-auto-switch-input-method/</link>
