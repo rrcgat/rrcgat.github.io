@@ -39,7 +39,8 @@ vim.api.nvim_create_autocmd({ "InsertEnter", "VimLeave" }, {
   group = augroup("restore_im"),
   callback = restore_normal_im
 })
-
 ```
 
 适用于 Linux 下的 Neovim + ibus（+rime）。使用体验提升不明显，可能是比较少在 Vim 下输入中文。同时这种切换方式是输入法之间的切换，对于习惯使用 Shift 键在输入法内切换中英文状态的人来说，不太友好。
+
+使用了一段时间，不太适应，切换回 rime 会重置之前 rime 的状态，理想的切换方式是输入法内切换中英文，先暂时关闭。
