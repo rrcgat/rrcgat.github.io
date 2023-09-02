@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>linux on Rrcgat</title>
+    <link>https://rrcgat.github.io/tags/linux/</link>
+    <description>Recent content in linux on Rrcgat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Sat, 02 Sep 2023 09:09:42 +0800</lastBuildDate><atom:link href="https://rrcgat.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Desktop GPU</title>
+      <link>https://rrcgat.github.io/posts/linux-desktop-gpu/</link>
+      <pubDate>Sat, 02 Sep 2023 09:09:42 +0800</pubDate>
+      
+      <guid>https://rrcgat.github.io/posts/linux-desktop-gpu/</guid>
+      <description>最近在 Linux 桌面上分别尝试了 AMD 和 NVIDIA 的独立显卡（使用的都是 Wayland 协议），踩了一些坑，分享出来。
+AMD 对于 AMD 显卡，安装一路顺畅，跟着 Arch Wiki 安装完系统，装个桌面就能用了。进入桌面后跟笔记本的核显使用体验一致，并且后续使用并无异常，比睡眠后唤醒，无黑屏问题等。
+如果只是想安静地作为桌面显示用的显卡，AMD 表现很完美。但要是想玩一些模型，比如 Whisper 和 Llama 2，那坑就来了。
+既然想玩模型，那多少是知道 AMD 显卡在炼丹领域是比不上 NVIDIA 的。但具体相差多远呢？PyTorch 有 ROCm 的选项支持 AMD 显卡，但模型就不一定能运行了。
+实际测试下来，能跑的模型也有，比如：
+ChatGLM Stable Diffusion web UI ChatGLM 直接启动会报错，显卡不是最新的。根据 WenJieLife 的提示，设置环境变量解决：export HSA_OVERRIDE_GFX_VERSION=10.3.0 HCC_AMDGPU_TARGET=gfx1030。但如果使用量化模型，就不行了。Stable Diffusion web UI 同样需要进行一些配置，但有现成的教程可参考：
+A卡ROCm运行Stable Diffusion AI画图 Stable Diffusion 使用 AMD ROCm 显卡加速 后续尝试 Llama 2 模型，跑不动，WhisperX 需要 NVIDIA 显卡。
+NVIDIA 安装时建议按照 NVIDIA - ArchWiki 中的步骤进行。</description>
+    </item>
+    
+  </channel>
+</rss>
